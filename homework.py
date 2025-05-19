@@ -38,11 +38,14 @@ pipeline = dlt.pipeline(
     pipeline_name="jaffleshop_pipeline",
     destination="duckdb",
     dataset_name="jaffleshop_data",
-    dev_mode=True,
+    dev_mode=False,
 )
 
-pipeline.extract(jaffleshop_source())
-pipeline.normalize()
-pipeline.load()
+#pipeline.extract(jaffleshop_source())
+#pipeline.normalize()
+#pipeline.load()
 
-print(pipeline.last_trace)
+#print(pipeline.last_trace)
+
+load_info = pipeline.run(jaffleshop_source())
+print(load_info)

@@ -1,0 +1,5 @@
+cron-descriptor==1.4.5
+dlt==1.10.0
+duckdb==1.2.2
+pandas==2.2.3
+pipdeptree==2.9.6
