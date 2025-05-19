@@ -1,0 +1,5 @@
+.venv
+homework1.py
+lesson1.py
+jaffle_pipeline.duckdb
+jaffleshop_pipeline.duckdb
